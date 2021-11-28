@@ -1,14 +1,39 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+// Import CSS
+import './index.css'
+
 // Always must return something
 
-function Greeting(){
+function BookList(){
   return (
-    <div>
-      <h1>Some Test</h1>
-    </div>
-    );
+    <section className='booklist'>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
+  );
 }
 
-ReactDom.render(<Greeting/>,document.getElementById('root'));
+//Some global props
+const author = 'Amadan barbaran';
+
+// Component Book
+const Book = () => {
+  //Prop inside function
+  const title = 'Super book';
+
+  return (
+    <article className='book'>
+      <img src='https://images-na.ssl-images-amazon.com/images/I/71bROORU%2BnL._AC_UL200_SR200,200_.jpg' alt='' />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+    </article>
+  );
+}
+
+//Must be expression and cannot be a statement
+
+ReactDom.render(<BookList/>,document.getElementById('root'));
