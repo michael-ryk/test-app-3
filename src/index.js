@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import books from './books';
-import Book from './Book';
 
 // Import CSS
 import './index.css'
+
+import books from './books';
+import Book from './Book';
 
 // Book list creator
 function BookList(){

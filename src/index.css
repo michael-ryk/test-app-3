@@ -10,11 +10,11 @@ body {
 }
 
 .booklist {
-    width: 90vw;
-    max-width: 1170px;
-    margin: 5rem auto;
+    width: 80vw;
     display: grid;
-    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -24,11 +24,21 @@ body {
 }
 
 .book {
-    background: #FFF;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    background:ghostwhite;
+    border-style:solid;
+    border-width: 0.5px;
+    border-color:lightslategrey;
     padding: 1rem 2rem;
+    text-align: center;
 }
 
 .book h1{
     margin-top: 0.5rem;
+    color:lightskyblue;
+}
+
+.btn {
+    margin: 1rem 0.25rem;
+    color:lightslategrey;
 }
